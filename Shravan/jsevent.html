@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<body onload="Load()">
+<h2>The onclick Event </h2>
+<button onclick="Open()"> Click me </button>
+<h2>The Double click Event</h2>
+<button ondblclick="Close()">Click me </button><br><br>
+<img onmouseover="Big(this)" onmouseout="Normal(this)" src="bmw.jpeg" height"100" width="100" >
+<script>
+function Open(){
+	document.write("Hello World !!!");
+}
+function Close(){
+	document.write("Byeee World !!!");
+}
+function Load(){
+	alert("Page is loaded");
+}
+function Big(x){
+	x.style.height="200px";
+	x.style.widtt="400px";
+}
+function Normal(x){
+	x.style.height="100px";
+	x.style.widtt="100px";
+}
+</script>
+</body>
+</html>
